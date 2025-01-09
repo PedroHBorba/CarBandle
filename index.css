@@ -1,0 +1,146 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   font-family: "Source Serif 4", serif;
+ }
+
+ body {
+   font-size: 16px;
+   overflow: hidden;
+
+ }
+
+ header {
+  color: aliceblue;
+   position:absolute;
+   width: 90vw;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+   z-index: 2;
+
+
+   & img {
+     width: 25vh;
+   }
+
+   & nav {
+    
+     & ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+       & a{
+        color: aliceblue;
+       }
+     }
+   }
+ }
+
+ section {
+   background-image: radial-gradient(hsl(214, 74%, 41%), #04182c);
+   position: relative;
+   height: 100vh;
+   color: antiquewhite;
+
+   & .list {
+     width: 70vh;
+     margin: auto;
+     height: 100%;
+     position: relative;
+
+     & .item {
+       position: absolute;
+       inset: 0;
+
+       & .car-img {
+         position: absolute;
+         top: 25vh;
+         width: 90vh;
+         right: 30vh;
+
+         & img {
+           width: 100%;
+         }
+       }
+
+       & .content {
+         position: absolute;
+         left: 70vh;
+         top: 20vh;
+         width: 70%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: end;
+         gap: 20px;
+
+       
+
+         & .car-information {
+           font-weight: bold;
+         }
+
+         & h2 {
+          position: relative;
+          bottom: 55vh;
+          right: -10vh;
+          width: 100%;
+           font-size: 3em;
+           height: 1em;
+           font-family: "Poppins", sans-serif;
+            
+         }
+         & .p{
+          position: absolute;
+          top: 40vh;
+          left: -138vh;
+         }
+         & .description {
+          position: absolute;
+           top: -04vh;
+           color: antiquewhite;
+           font-size:20px;
+           text-align: right;
+           max-width: 400px;
+           align-self: auto;
+         }
+         & .specifications{
+          & ul{
+          display: flex;
+          position: relative;
+          bottom: -10vh;
+          width: 150%;
+          right: 50vh;
+          gap: 60px;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: space-between;
+          &::before{
+              content: '';
+              position: absolute;
+              height: 100px;
+              width: 96%;
+              top: -20%;
+              border: 1px solid #fff;
+            }
+         }
+        }
+       }
+     }
+   }
+       & img {
+         position: absolute;
+         width: 16px;
+         margin-top: -7px;
+         cursor: pointer;
+         margin-left: -7px;
+       }
+      }
+ 
